@@ -1,0 +1,1799 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+---
+
+<!doctype html>
+<html lang="tr">
+	<head>
+		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+	</head>
+	<body>
+		<Header />
+
+		<!-- ========== HERO SECTION ========== -->
+		<section id="hero" class="hero">
+			<div class="hero-bg-shapes">
+				<div class="hero-shape hero-shape--1"></div>
+				<div class="hero-shape hero-shape--2"></div>
+				<div class="hero-shape hero-shape--3"></div>
+			</div>
+			<div class="container">
+				<div class="hero-grid">
+					<div class="hero-content">
+						<div class="hero-badge">
+							<svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor"><path d="M8 0l2.2 5.5L16 6.3l-4 3.7 1 5.5L8 12.8 2.9 15.5l1-5.5-4-3.7 5.9-.8z"/></svg>
+							Sınava Özel Hazırlanmış Çalışma Aracı
+						</div>
+						<h1 class="hero-title">
+							BKÜ Sınavına <br/>
+							<span class="hero-title--highlight">Hazırlığın</span> <br/>
+							Tek Adresi
+						</h1>
+						<p class="hero-subtitle">
+							Mevzuat, soru bankası, deneme sınavları, flashcard tekrar sistemi ve daha fazlası — sınav hazırlığınızı tek bir uygulamadan, planlı ve sistemli şekilde yönetin.
+						</p>
+						<div class="store-buttons">
+							<a href="#" class="store-btn" id="hero-appstore" aria-label="App Store'dan İndir">
+								<svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+								<span class="store-btn__label">
+									<span class="store-btn__small">Şimdi İndir</span>
+									<span class="store-btn__big">App Store</span>
+								</span>
+							</a>
+							<a href="#" class="store-btn" id="hero-gplay" aria-label="Google Play'den İndir">
+								<svg viewBox="0 0 24 24" fill="currentColor"><path d="M3.609 1.814L13.792 12 3.61 22.186a.996.996 0 0 1-.61-.92V2.734a1 1 0 0 1 .609-.92zm10.89 10.893l2.302 2.302-10.937 6.333 8.635-8.635zm3.199-3.199l2.302 1.33-2.922 1.691-2.07-2.07 2.69-2.951zM5.864 2.658L16.8 8.99l-2.302 2.302-8.634-8.634z"/></svg>
+								<span class="store-btn__label">
+									<span class="store-btn__small">Şimdi İndir</span>
+									<span class="store-btn__big">Google Play</span>
+								</span>
+							</a>
+						</div>
+						<div class="hero-stats">
+							<div class="hero-stat">
+								<span class="hero-stat__number">9+</span>
+								<span class="hero-stat__label">Çalışma Modülü</span>
+							</div>
+							<div class="hero-stat-divider"></div>
+							<div class="hero-stat">
+								<span class="hero-stat__number">1000+</span>
+								<span class="hero-stat__label">Soru İçeriği</span>
+							</div>
+							<div class="hero-stat-divider"></div>
+							<div class="hero-stat">
+								<span class="hero-stat__number">BKÜ</span>
+								<span class="hero-stat__label">Sınava Özel</span>
+							</div>
+						</div>
+					</div>
+					<div class="hero-visual">
+						<div class="hero-phone">
+							<div class="phone-frame">
+								<div class="phone-notch"></div>
+								<div class="phone-screen">
+									<div class="mock-app">
+										<div class="mock-header">
+											<div class="mock-greeting">Hoş geldin</div>
+											<div class="mock-title">BKÜBTS Pro</div>
+										</div>
+										<div class="mock-progress-card">
+											<div class="mock-progress-label">Genel İlerleme</div>
+											<div class="mock-progress-bar"><div class="mock-progress-fill" style="width: 68%"></div></div>
+											<div class="mock-progress-text">%68 Tamamlandı</div>
+										</div>
+										<div class="mock-modules">
+											<div class="mock-module">
+												<div class="mock-module-icon" style="background:#E8F5EE;color:#1B5E3B;"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><rect x="8" y="2" width="8" height="4" rx="1" ry="1"></rect></svg></div>
+												<div class="mock-module-info">
+													<div class="mock-module-name">Mevzuat</div>
+													<div class="mock-module-sub">12 bölüm</div>
+												</div>
+												<div class="mock-module-badge">%82</div>
+											</div>
+											<div class="mock-module">
+												<div class="mock-module-icon" style="background:#FEF3C7;color:#D97706;"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path><line x1="12" y1="17" x2="12.01" y2="17"></line></svg></div>
+												<div class="mock-module-info">
+													<div class="mock-module-name">Soru Bankası</div>
+													<div class="mock-module-sub">450 soru</div>
+												</div>
+												<div class="mock-module-badge">%54</div>
+											</div>
+											<div class="mock-module">
+												<div class="mock-module-icon" style="background:#EDE9FE;color:#7C3AED;"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path></svg></div>
+												<div class="mock-module-info">
+													<div class="mock-module-name">Deneme Sınavı</div>
+													<div class="mock-module-sub">8 deneme</div>
+												</div>
+												<div class="mock-module-badge">%35</div>
+											</div>
+											<div class="mock-module">
+												<div class="mock-module-icon" style="background:#FCE7F3;color:#DB2777;"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 4 23 10 17 10"></polyline><polyline points="1 20 1 14 7 14"></polyline><path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"></path></svg></div>
+												<div class="mock-module-info">
+													<div class="mock-module-name">Flashcard</div>
+													<div class="mock-module-sub">180 kart</div>
+												</div>
+												<div class="mock-module-badge">%71</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="hero-float-card hero-float-card--1">
+							<div class="float-card-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color:var(--color-primary)"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg></div>
+							<div>
+								<div class="float-card-title">Günlük Hedef</div>
+								<div class="float-card-text">20 soru çözüldü</div>
+							</div>
+						</div>
+						<div class="hero-float-card hero-float-card--2">
+							<div class="float-card-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color:var(--color-primary)"><line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line></svg></div>
+							<div>
+								<div class="float-card-title">Başarı Oranı</div>
+								<div class="float-card-text">%87 doğruluk</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- ========== TRUST / POSITIONING ========== -->
+		<section id="guven" class="section trust-section">
+			<div class="container">
+				<div class="trust-grid">
+					<div class="trust-card animate-on-scroll">
+						<div class="trust-icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color:var(--color-primary)"><circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="6"></circle><circle cx="12" cy="12" r="2"></circle></svg></div>
+						<h3>Sınava Özel</h3>
+						<p>Yalnızca BKÜ / BKUBTS sınavına odaklı, sınav konularına göre hazırlanmış içerikler</p>
+					</div>
+					<div class="trust-card animate-on-scroll">
+						<div class="trust-icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color:var(--color-primary)"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg></div>
+						<h3>Tek Merkezde</h3>
+						<p>Mevzuat, soru çözümü, tekrar ve takip araçları tek bir uygulamada</p>
+					</div>
+					<div class="trust-card animate-on-scroll">
+						<div class="trust-icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color:var(--color-primary)"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect><line x1="12" y1="18" x2="12.01" y2="18"></line></svg></div>
+						<h3>Her Yerde Çalış</h3>
+						<p>iOS ve Android destekli, istediğiniz an istediğiniz yerden çalışma imkanı</p>
+					</div>
+					<div class="trust-card animate-on-scroll">
+						<div class="trust-icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color:var(--color-primary)"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline><polyline points="17 6 23 6 23 12"></polyline></svg></div>
+						<h3>İlerlemeni Gör</h3>
+						<p>Çalışma sürecinizi ölçün, eksiklerinizi keşfedin, stratejik ilerleyin</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- ========== FEATURES SECTION ========== -->
+		<section id="ozellikler" class="section section--alt">
+			<div class="container">
+				<div class="section-header">
+					<div class="section-badge">
+						<svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor"><path d="M8 0l2.2 5.5L16 6.3l-4 3.7 1 5.5L8 12.8 2.9 15.5l1-5.5-4-3.7 5.9-.8z"/></svg>
+						Güçlü Özellikler
+					</div>
+					<h2 class="section-title">Sınav Hazırlığınız İçin<br/>İhtiyacınız Olan Her Şey</h2>
+					<p class="section-subtitle">Her modül, sınava hazırlık sürecinizin farklı bir aşamasını desteklemek için tasarlanmıştır. Öğrenin, çözün, tekrar edin ve ilerleyişinizi takip edin.</p>
+				</div>
+
+				<!-- Feature Spotlight 1: Mevzuat -->
+				<div class="feature-spotlight animate-on-scroll">
+					<div class="feature-spotlight__content">
+						<div class="feature-spotlight__badge">01</div>
+						<h3 class="feature-spotlight__title">Mevzuat Çalışma Modülü</h3>
+						<p class="feature-spotlight__desc">Karmaşık mevzuat metinlerini daha erişilebilir ve anlaşılır hale getiren çalışma alanı. Bölüm bölüm, madde madde ilerleyin ve mevzuatlar arasında kaybolmadan odaklı çalışın.</p>
+						<ul class="feature-spotlight__list">
+							<li>
+								<svg width="18" height="18" viewBox="0 0 16 16" fill="var(--color-primary)"><circle cx="8" cy="8" r="8"/><path d="M5 8l2 2 4-4" stroke="white" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+								Mevzuatları tek yerde toplu şekilde görüntüleyin
+							</li>
+							<li>
+								<svg width="18" height="18" viewBox="0 0 16 16" fill="var(--color-primary)"><circle cx="8" cy="8" r="8"/><path d="M5 8l2 2 4-4" stroke="white" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+								Bölüm ve madde bazlı ilerleme takibi
+							</li>
+							<li>
+								<svg width="18" height="18" viewBox="0 0 16 16" fill="var(--color-primary)"><circle cx="8" cy="8" r="8"/><path d="M5 8l2 2 4-4" stroke="white" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+								Sadeleştirilmiş çalışma deneyimi
+							</li>
+							<li>
+								<svg width="18" height="18" viewBox="0 0 16 16" fill="var(--color-primary)"><circle cx="8" cy="8" r="8"/><path d="M5 8l2 2 4-4" stroke="white" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+								Odaklı ve akıcı çalışma ortamı
+							</li>
+						</ul>
+					</div>
+					<div class="feature-spotlight__visual">
+						<div class="feature-phone">
+							<div class="phone-frame phone-frame--sm">
+								<div class="phone-notch"></div>
+								<div class="phone-screen">
+									<div class="mock-mevzuat">
+										<div class="mock-mevzuat-header"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><rect x="8" y="2" width="8" height="4" rx="1" ry="1"></rect></svg> Mevzuat</div>
+										<div class="mock-mevzuat-item done">
+											<span class="mock-check">✓</span>
+											<div>
+												<div class="mock-mevzuat-title">Bitki Koruma Ürünleri Yönetmeliği</div>
+												<div class="mock-mevzuat-sub">42 madde · Tamamlandı</div>
+											</div>
+										</div>
+										<div class="mock-mevzuat-item done">
+											<span class="mock-check">✓</span>
+											<div>
+												<div class="mock-mevzuat-title">Zirai Karantina Yönetmeliği</div>
+												<div class="mock-mevzuat-sub">28 madde · Tamamlandı</div>
+											</div>
+										</div>
+										<div class="mock-mevzuat-item active">
+											<span class="mock-check active">▶</span>
+											<div>
+												<div class="mock-mevzuat-title">Tohumculuk Kanunu</div>
+												<div class="mock-mevzuat-sub">35 madde · Devam ediyor</div>
+											</div>
+										</div>
+										<div class="mock-mevzuat-item">
+											<span class="mock-check empty"></span>
+											<div>
+												<div class="mock-mevzuat-title">Gıda Kanunu</div>
+												<div class="mock-mevzuat-sub">18 madde</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- Feature Spotlight 2: Soru Bankası -->
+				<div class="feature-spotlight feature-spotlight--reverse animate-on-scroll">
+					<div class="feature-spotlight__content">
+						<div class="feature-spotlight__badge">02</div>
+						<h3 class="feature-spotlight__title">Soru Bankası</h3>
+						<p class="feature-spotlight__desc">Rastgele çalışmak yerine kontrollü ve hedefli soru çözümü yapın. Konu bazlı pratik yaparak eksik olduğunuz alanları hızla fark edin ve bilginizi pekiştirin.</p>
+						<ul class="feature-spotlight__list">
+							<li>
+								<svg width="18" height="18" viewBox="0 0 16 16" fill="var(--color-primary)"><circle cx="8" cy="8" r="8"/><path d="M5 8l2 2 4-4" stroke="white" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+								Konu bazlı pratik yapma
+							</li>
+							<li>
+								<svg width="18" height="18" viewBox="0 0 16 16" fill="var(--color-primary)"><circle cx="8" cy="8" r="8"/><path d="M5 8l2 2 4-4" stroke="white" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+								Eksik olunan alanları hızlı fark etme
+							</li>
+							<li>
+								<svg width="18" height="18" viewBox="0 0 16 16" fill="var(--color-primary)"><circle cx="8" cy="8" r="8"/><path d="M5 8l2 2 4-4" stroke="white" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+								Tekrar çözerek bilgiyi pekiştirme
+							</li>
+							<li>
+								<svg width="18" height="18" viewBox="0 0 16 16" fill="var(--color-primary)"><circle cx="8" cy="8" r="8"/><path d="M5 8l2 2 4-4" stroke="white" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+								Sınava yönelik odaklı alıştırma
+							</li>
+						</ul>
+					</div>
+					<div class="feature-spotlight__visual">
+						<div class="feature-phone">
+							<div class="phone-frame phone-frame--sm">
+								<div class="phone-notch"></div>
+								<div class="phone-screen">
+									<img src="/mockup-quiz.png" alt="Soru Bankası ekran görüntüsü" class="mock-screenshot" />
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- Feature Grid: Small Features -->
+				<div class="features-grid">
+					<!-- Deneme Sınavları -->
+					<div class="feature-card animate-on-scroll">
+						<div class="feature-card__icon" style="background: #FEF3C7; color: #D97706;">
+							<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 8v4l3 3"/><circle cx="12" cy="12" r="10"/></svg>
+						</div>
+						<h4 class="feature-card__title">Deneme Sınavları</h4>
+						<p class="feature-card__desc">Gerçek sınav deneyimine yakın çalışma ortamı. Zaman yönetimi pratiği yapın, performansınızı ölçün ve sınav öncesi hazırbulunuşluğunuzu test edin.</p>
+						<ul class="feature-card__tags">
+							<li>Zaman Yönetimi</li>
+							<li>Performans Ölçümü</li>
+						</ul>
+					</div>
+
+					<!-- Flashcard -->
+					<div class="feature-card animate-on-scroll">
+						<div class="feature-card__icon" style="background: #EDE9FE; color: #7C3AED;">
+							<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="2" y="4" width="20" height="16" rx="3"/><path d="M12 4v16M2 12h20"/></svg>
+						</div>
+						<h4 class="feature-card__title">Flashcard Tekrar Sistemi</h4>
+						<p class="feature-card__desc">Çalıştığınızı unutmamak için akıllı tekrar. Kısa tekrarlarla kalıcı öğrenme sağlayın, yoğun bilgi yükünü yönetilebilir hale getirin.</p>
+						<ul class="feature-card__tags">
+							<li>Akıllı Tekrar</li>
+							<li>Kalıcı Öğrenme</li>
+						</ul>
+					</div>
+
+					<!-- Yanlışlarım -->
+					<div class="feature-card animate-on-scroll">
+						<div class="feature-card__icon" style="background: #FCE7F3; color: #DB2777;">
+							<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 9v4M12 17h.01"/><circle cx="12" cy="12" r="10"/></svg>
+						</div>
+						<h4 class="feature-card__title">Yanlışlarım</h4>
+						<p class="feature-card__desc">Kişisel koçluk hissi. Hatalı çözdüğünüz soruları yeniden çalışın, zayıf noktalarınızı görün ve aynı hataları tekrar etmeyin.</p>
+						<ul class="feature-card__tags">
+							<li>Hata Analizi</li>
+							<li>Stratejik Çalışma</li>
+						</ul>
+					</div>
+
+					<!-- Favorilerim -->
+					<div class="feature-card animate-on-scroll">
+						<div class="feature-card__icon" style="background: #FEE2E2; color: #EF4444;">
+							<svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+						</div>
+						<h4 class="feature-card__title">Favorilerim</h4>
+						<p class="feature-card__desc">Önemli soruları, maddeleri ve içerikleri kaydedin. Kendi kişisel çalışma arşivinizi oluşturun, kritik içeriklere hızla erişin.</p>
+						<ul class="feature-card__tags">
+							<li>Hızlı Erişim</li>
+							<li>Kişisel Arşiv</li>
+						</ul>
+					</div>
+
+					<!-- Latince Çalışma -->
+					<div class="feature-card animate-on-scroll">
+						<div class="feature-card__icon" style="background: #DBEAFE; color: #2563EB;">
+							<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7V4h16v3M9 20h6M12 4v16"/></svg>
+						</div>
+						<h4 class="feature-card__title">Latince Çalışma Araçları</h4>
+						<p class="feature-card__desc">Sınavda önemli Latince terimleri kontrollü tekrar ile öğrenin. Karışan kavramları ayırt edin, terminolojiye daha çok hakim olun.</p>
+						<ul class="feature-card__tags">
+							<li>Niş Avantaj</li>
+							<li>Terim Hâkimiyeti</li>
+						</ul>
+					</div>
+
+					<!-- Veritabanı -->
+					<div class="feature-card animate-on-scroll">
+						<div class="feature-card__icon" style="background: #D1FAE5; color: #059669;">
+							<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>
+						</div>
+						<h4 class="feature-card__title">Veritabanı İçerikleri</h4>
+						<p class="feature-card__desc">Dağınık notlar yerine düzenli bilgiye erişin. Konular arasında bağlantı kurun, hızlı gözden geçirin ve referans olarak kullanın.</p>
+						<ul class="feature-card__tags">
+							<li>Düzenli Bilgi</li>
+							<li>Hızlı Referans</li>
+						</ul>
+					</div>
+				</div>
+
+				<!-- Feature Spotlight 3: İlerleme Takibi -->
+				<div class="feature-spotlight animate-on-scroll" style="margin-top: var(--space-4xl);">
+					<div class="feature-spotlight__content">
+						<div class="feature-spotlight__badge" style="background: var(--gradient-accent); color: white;">★</div>
+						<h3 class="feature-spotlight__title">İlerleme ve Performans Takibi</h3>
+						<p class="feature-spotlight__desc">Ölçülebilir ilerleme ile çalışma sürecinizi her açıdan görün. Ne kadar ilerlediğinizi, hangi alanlarda iyi olduğunuzu fark edin, eksik konulara yeniden yönelin.</p>
+						<ul class="feature-spotlight__list">
+							<li>
+								<svg width="18" height="18" viewBox="0 0 16 16" fill="var(--color-primary)"><circle cx="8" cy="8" r="8"/><path d="M5 8l2 2 4-4" stroke="white" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+								Detaylı çalışma istatistikleri
+							</li>
+							<li>
+								<svg width="18" height="18" viewBox="0 0 16 16" fill="var(--color-primary)"><circle cx="8" cy="8" r="8"/><path d="M5 8l2 2 4-4" stroke="white" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+								Konu bazlı performans analizi
+							</li>
+							<li>
+								<svg width="18" height="18" viewBox="0 0 16 16" fill="var(--color-primary)"><circle cx="8" cy="8" r="8"/><path d="M5 8l2 2 4-4" stroke="white" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+								Motivasyonu koruyan görsel ilerleme
+							</li>
+						</ul>
+					</div>
+					<div class="feature-spotlight__visual">
+						<div class="feature-phone">
+							<div class="phone-frame phone-frame--sm">
+								<div class="phone-notch"></div>
+								<div class="phone-screen">
+									<div class="mock-stats">
+										<div class="mock-stats-header">
+											<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--color-primary)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="display:inline-block; vertical-align:middle; margin-right:6px;"><line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line></svg>
+											İstatistikler
+										</div>
+										<div class="mock-stats-ring">
+											<svg viewBox="0 0 120 120" width="100" height="100">
+												<circle cx="60" cy="60" r="52" fill="none" stroke="#E8F5EE" stroke-width="10"/>
+												<circle cx="60" cy="60" r="52" fill="none" stroke="#1B5E3B" stroke-width="10" stroke-dasharray="245" stroke-dashoffset="78" stroke-linecap="round" transform="rotate(-90 60 60)"/>
+												<text x="60" y="56" text-anchor="middle" font-size="22" font-weight="800" fill="#1B5E3B">%68</text>
+												<text x="60" y="72" text-anchor="middle" font-size="10" fill="#7A9488">Genel Başarı</text>
+											</svg>
+										</div>
+										<div class="mock-stats-bars">
+											<div class="mock-stats-bar-item">
+												<div class="mock-stats-bar-label">Mevzuat</div>
+												<div class="mock-stats-bar"><div class="mock-stats-bar-fill" style="width:82%;background:#1B5E3B;"></div></div>
+												<span>%82</span>
+											</div>
+											<div class="mock-stats-bar-item">
+												<div class="mock-stats-bar-label">Soru Bankası</div>
+												<div class="mock-stats-bar"><div class="mock-stats-bar-fill" style="width:65%;background:#D97706;"></div></div>
+												<span>%65</span>
+											</div>
+											<div class="mock-stats-bar-item">
+												<div class="mock-stats-bar-label">Deneme</div>
+												<div class="mock-stats-bar"><div class="mock-stats-bar-fill" style="width:54%;background:#7C3AED;"></div></div>
+												<span>%54</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</section>
+
+		<!-- ========== APP SCREENSHOTS ========== -->
+		<section id="ekranlar" class="section">
+			<div class="container">
+				<div class="section-header">
+					<div class="section-badge">
+						<svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor"><path d="M4 1h8a3 3 0 013 3v8a3 3 0 01-3 3H4a3 3 0 01-3-3V4a3 3 0 013-3z"/></svg>
+						Uygulama Ekranları
+					</div>
+					<h2 class="section-title">Premium Çalışma Deneyimi</h2>
+					<p class="section-subtitle">Modern ve kullanıcı dostu arayüzüyle sınav hazırlığınızı daha verimli hale getirin.</p>
+				</div>
+
+				<div class="screenshots-showcase">
+					<div class="screenshot-item animate-on-scroll">
+						<div class="phone-frame phone-frame--showcase">
+							<div class="phone-notch"></div>
+							<div class="phone-screen">
+								<img src="/mockup-flashcard.png" alt="Flashcard çalışma ekranı" class="mock-screenshot" />
+							</div>
+						</div>
+						<p class="screenshot-label">Flashcard Ekranı</p>
+					</div>
+					<div class="screenshot-item animate-on-scroll">
+						<div class="phone-frame phone-frame--showcase phone-frame--featured">
+							<div class="phone-notch"></div>
+							<div class="phone-screen">
+								<div class="mock-app mock-app--showcase">
+									<div class="mock-header">
+										<div class="mock-greeting">Hoş geldin 👋</div>
+										<div class="mock-title">BKÜBTS Pro</div>
+									</div>
+									<div class="mock-progress-card">
+										<div class="mock-progress-label">Genel İlerleme</div>
+										<div class="mock-progress-bar"><div class="mock-progress-fill" style="width: 68%"></div></div>
+										<div class="mock-progress-text">%68 Tamamlandı</div>
+									</div>
+									<div class="mock-modules">
+										<div class="mock-module"><div class="mock-module-icon" style="background:#E8F5EE;color:#1B5E3B;"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><rect x="8" y="2" width="8" height="4" rx="1" ry="1"></rect></svg></div><div class="mock-module-info"><div class="mock-module-name">Mevzuat</div><div class="mock-module-sub">12 bölüm</div></div><div class="mock-module-badge">%82</div></div>
+										<div class="mock-module"><div class="mock-module-icon" style="background:#FEF3C7;color:#D97706;"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path><line x1="12" y1="17" x2="12.01" y2="17"></line></svg></div><div class="mock-module-info"><div class="mock-module-name">Soru Bankası</div><div class="mock-module-sub">450 soru</div></div><div class="mock-module-badge">%54</div></div>
+										<div class="mock-module"><div class="mock-module-icon" style="background:#EDE9FE;color:#7C3AED;"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path></svg></div><div class="mock-module-info"><div class="mock-module-name">Deneme</div><div class="mock-module-sub">8 deneme</div></div><div class="mock-module-badge">%35</div></div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<p class="screenshot-label">Ana Ekran</p>
+					</div>
+					<div class="screenshot-item animate-on-scroll">
+						<div class="phone-frame phone-frame--showcase">
+							<div class="phone-notch"></div>
+							<div class="phone-screen">
+								<img src="/mockup-quiz.png" alt="Soru çözüm ekranı" class="mock-screenshot" />
+							</div>
+						</div>
+						<p class="screenshot-label">Soru Çözüm Ekranı</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- ========== WORKFLOW / HOW IT WORKS ========== -->
+		<section id="nasil-calisir" class="section section--alt">
+			<div class="container">
+				<div class="section-header">
+					<div class="section-badge">
+						<svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor"><path d="M8 1a7 7 0 100 14A7 7 0 008 1zm3 8H9v2a1 1 0 01-2 0V9H5a1 1 0 010-2h2V5a1 1 0 012 0v2h2a1 1 0 010 2z"/></svg>
+						Çalışma Sistemi
+					</div>
+					<h2 class="section-title">Sadece İçerik Değil,<br/>Bir Sistem Sunuyoruz</h2>
+					<p class="section-subtitle">BKÜBTS Pro, sınava hazırlık sürecinizi adım adım yöneten bütünleşik bir çalışma sistemidir.</p>
+				</div>
+
+				<div class="workflow-steps">
+					<div class="workflow-step animate-on-scroll">
+						<div class="workflow-step__number">1</div>
+						<div class="workflow-step__connector"></div>
+						<div class="workflow-step__content">
+							<div class="workflow-step__icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg></div>
+							<h4>Öğren</h4>
+							<p>Mevzuatları ve temel konuları sistematik olarak çalışın</p>
+						</div>
+					</div>
+					<div class="workflow-step animate-on-scroll">
+						<div class="workflow-step__number">2</div>
+						<div class="workflow-step__connector"></div>
+						<div class="workflow-step__content">
+							<div class="workflow-step__icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color:var(--color-primary)"><path d="M17 3a2.828 2.828 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5L17 3z"></path></svg></div>
+							<h4>Çöz</h4>
+							<p>Soru bankası ve deneme sınavlarıyla bilginizi test edin</p>
+						</div>
+					</div>
+					<div class="workflow-step animate-on-scroll">
+						<div class="workflow-step__number">3</div>
+						<div class="workflow-step__connector"></div>
+						<div class="workflow-step__content">
+							<div class="workflow-step__icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color:var(--color-primary)"><polyline points="23 4 23 10 17 10"></polyline><polyline points="1 20 1 14 7 14"></polyline><path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"></path></svg></div>
+							<h4>Tekrar Et</h4>
+							<p>Flashcard ve favori içeriklerle düzenli tekrar yapın</p>
+						</div>
+					</div>
+					<div class="workflow-step animate-on-scroll">
+						<div class="workflow-step__number">4</div>
+						<div class="workflow-step__connector"></div>
+						<div class="workflow-step__content">
+							<div class="workflow-step__icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color:var(--color-primary)"><circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="6"></circle><circle cx="12" cy="12" r="2"></circle></svg></div>
+							<h4>Hatalarını Gör</h4>
+							<p>Yanlış çözdüğünüz soruları analiz edin, zayıf noktalarınızı keşfedin</p>
+						</div>
+					</div>
+					<div class="workflow-step animate-on-scroll">
+						<div class="workflow-step__number">5</div>
+						<div class="workflow-step__content">
+							<div class="workflow-step__icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color:var(--color-primary)"><line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line></svg></div>
+							<h4>İlerlemeni Takip Et</h4>
+							<p>Detaylı istatistiklerle çalışma sürecinizi ölçün ve stratejinizi belirleyin</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- ========== WHY THIS APP ========== -->
+		<section id="neden-biz" class="section">
+			<div class="container">
+				<div class="section-header">
+					<div class="section-badge">
+						<svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor"><path d="M8 0l2.2 5.5L16 6.3l-4 3.7 1 5.5L8 12.8 2.9 15.5l1-5.5-4-3.7 5.9-.8z"/></svg>
+						Neden BKÜBTS Pro
+					</div>
+					<h2 class="section-title">Sınav Hazırlığınızda<br/>Fark Yaratın</h2>
+					<p class="section-subtitle">Dağınık kaynaklar ve düzensiz çalışma yerine, tek bir platformda planlı ve verimli hazırlanın.</p>
+				</div>
+
+				<div class="why-grid">
+					<div class="why-card animate-on-scroll">
+						<div class="why-card__icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color:var(--color-primary)"><circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="6"></circle><circle cx="12" cy="12" r="2"></circle></svg></div>
+						<h4>Sınava Özel Tasarlanmış</h4>
+						<p>Genel bir eğitim uygulaması değil, yalnızca BKÜ/BKUBTS sınavına odaklı içerik ve araçlar</p>
+					</div>
+					<div class="why-card animate-on-scroll">
+						<div class="why-card__icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color:var(--color-primary)"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path><polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline><line x1="12" y1="22.08" x2="12" y2="12"></line></svg></div>
+						<h4>Tek Merkezden Hazırlık</h4>
+						<p>Mevzuat, soru çözümü, tekrar ve performans takibi tek bir uygulamada — dağınık kaynaklara son</p>
+					</div>
+					<div class="why-card animate-on-scroll">
+						<div class="why-card__icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color:var(--color-primary)"><path d="M21.3 15.3a2.4 2.4 0 0 1 0 3.4l-2.6 2.6a2.4 2.4 0 0 1-3.4 0L2.7 8.7a2.41 2.41 0 0 1 0-3.4l2.6-2.6a2.41 2.41 0 0 1 3.4 0Z"></path><path d="m14.5 12.5 2-2"></path><path d="m11.5 9.5 2-2"></path><path d="m8.5 6.5 2-2"></path><path d="m17.5 15.5 2-2"></path></svg></div>
+						<h4>Planlı ve Sistemli</h4>
+						<p>Öğren-çöz-tekrar et-takip et döngüsüyle çalışma sürecinizi düzenli hale getirin</p>
+					</div>
+					<div class="why-card animate-on-scroll">
+						<div class="why-card__icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color:var(--color-primary)"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg></div>
+						<h4>Zamanı Verimli Kullanın</h4>
+						<p>Konu bazlı çalışma, akıllı tekrar ve hedefli soru çözümüyle her dakikayı değerlendirin</p>
+					</div>
+					<div class="why-card animate-on-scroll">
+						<div class="why-card__icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color:var(--color-primary)"><circle cx="12" cy="12" r="10"></circle><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"></polygon></svg></div>
+						<h4>Kişisel Çalışma Yönetimi</h4>
+						<p>İlerlemenizi görün, eksiklerinizi keşfedin, çalışma stratejinizi kendi verilerinizle şekillendirin</p>
+					</div>
+					<div class="why-card animate-on-scroll">
+						<div class="why-card__icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color:var(--color-primary)"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"></path><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"></path><path d="M4 22h16"></path><path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"></path><path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"></path><path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"></path></svg></div>
+						<h4>Profesyonel Çalışma Aracı</h4>
+						<p>PDF, not defteri ve dağınık kaynaklarla uğraşmadan, profesyonel bir araçla çalışın</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- ========== FAQ ========== -->
+		<section id="sss" class="section section--alt">
+			<div class="container container--narrow">
+				<div class="section-header">
+					<div class="section-badge">
+						<svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor"><path d="M8 0a8 8 0 100 16A8 8 0 008 0zm1 13H7v-2h2v2zm0-4H7V3h2v6z"/></svg>
+						SSS
+					</div>
+					<h2 class="section-title">Sıkça Sorulan Sorular</h2>
+					<p class="section-subtitle">Merak ettiklerinize hızlı yanıtlar.</p>
+				</div>
+
+				<div class="faq-list">
+					<details class="faq-item animate-on-scroll" id="faq-1">
+						<summary class="faq-question">
+							<span>Uygulama hangi sınav için uygundur?</span>
+							<span class="faq-icon">+</span>
+						</summary>
+						<div class="faq-answer">
+							<p>BKÜBTS Pro, Türkiye'de Bitki Koruma Ürünleri Bayi ve Toptancılık Sınavı'na (BKÜ / BKUBTS) hazırlanan adaylar için özel olarak tasarlanmıştır. İçerikleri ve çalışma modülleri tamamen bu sınava yöneliktir.</p>
+						</div>
+					</details>
+
+					<details class="faq-item animate-on-scroll" id="faq-2">
+						<summary class="faq-question">
+							<span>İçerikler ne tür çalışma araçları sunar?</span>
+							<span class="faq-icon">+</span>
+						</summary>
+						<div class="faq-answer">
+							<p>Uygulama; mevzuat çalışma modülü, konu bazlı soru bankası, deneme sınavları, flashcard tekrar sistemi, yanlışlarım, favorilerim, Latince çalışma araçları, veritabanı içerikleri ve ilerleme takibi gibi kapsamlı çalışma araçları sunar.</p>
+						</div>
+					</details>
+
+					<details class="faq-item animate-on-scroll" id="faq-3">
+						<summary class="faq-question">
+							<span>Mevzuat ve soru çözümü birlikte var mı?</span>
+							<span class="faq-icon">+</span>
+						</summary>
+						<div class="faq-answer">
+							<p>Evet, uygulama hem mevzuat çalışma modülü hem de kapsamlı soru bankası içerir. Mevzuatları öğrendikten sonra konu bazlı soru çözerek bilginizi pekiştirebilirsiniz. İki modül birbirini destekleyecek şekilde tasarlanmıştır.</p>
+						</div>
+					</details>
+
+					<details class="faq-item animate-on-scroll" id="faq-4">
+						<summary class="faq-question">
+							<span>Uygulama yeni başlayanlar için uygun mu?</span>
+							<span class="faq-icon">+</span>
+						</summary>
+						<div class="faq-answer">
+							<p>Kesinlikle. Uygulama, sıfırdan başlayanlar için sistematik bir öğrenme akışı sunar. Mevzuatlardan başlayarak konu bazlı çalışabilir, ardından soru çözüme geçebilir ve tekrar sistemiyle bilgilerinizi kalıcı hale getirebilirsiniz.</p>
+						</div>
+					</details>
+
+					<details class="faq-item animate-on-scroll" id="faq-5">
+						<summary class="faq-question">
+							<span>İlerleme durumumu görebilir miyim?</span>
+							<span class="faq-icon">+</span>
+						</summary>
+						<div class="faq-answer">
+							<p>Evet, uygulama detaylı ilerleme takibi ve performans analizi sunar. Genel başarı oranınızı, konu bazlı performansınızı ve çalışma istatistiklerinizi görsel olarak takip edebilirsiniz.</p>
+						</div>
+					</details>
+				</div>
+			</div>
+		</section>
+
+		<!-- ========== FINAL CTA ========== -->
+		<section id="indir" class="section cta-section">
+			<div class="container">
+				<div class="cta-wrapper animate-on-scroll">
+					<div class="cta-bg-shapes">
+						<div class="cta-shape cta-shape--1"></div>
+						<div class="cta-shape cta-shape--2"></div>
+					</div>
+					<div class="cta-content">
+						<h2 class="cta-title">Sınava Hazırlığa<br/>Hemen Başlayın</h2>
+						<p class="cta-desc">BKÜBTS Pro ile çalışma sürecinizi planlı, sistemli ve verimli yönetin. Uygulamayı indirin ve farkı hissedin.</p>
+						<div class="store-buttons" style="justify-content: center;">
+							<a href="#" class="store-btn store-btn--light" id="cta-appstore" aria-label="App Store'dan İndir">
+								<svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+								<span class="store-btn__label">
+									<span class="store-btn__small">Şimdi İndir</span>
+									<span class="store-btn__big">App Store</span>
+								</span>
+							</a>
+							<a href="#" class="store-btn store-btn--light" id="cta-gplay" aria-label="Google Play'den İndir">
+								<svg viewBox="0 0 24 24" fill="currentColor"><path d="M3.609 1.814L13.792 12 3.61 22.186a.996.996 0 0 1-.61-.92V2.734a1 1 0 0 1 .609-.92zm10.89 10.893l2.302 2.302-10.937 6.333 8.635-8.635zm3.199-3.199l2.302 1.33-2.922 1.691-2.07-2.07 2.69-2.951zM5.864 2.658L16.8 8.99l-2.302 2.302-8.634-8.634z"/></svg>
+								<span class="store-btn__label">
+									<span class="store-btn__small">Şimdi İndir</span>
+									<span class="store-btn__big">Google Play</span>
+								</span>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<Footer />
+
+		<!-- Scroll Animation Observer -->
+		<script>
+			const observer = new IntersectionObserver((entries) => {
+				entries.forEach(entry => {
+					if (entry.isIntersecting) {
+						entry.target.classList.add('visible');
+					}
+				});
+			}, {
+				threshold: 0.1,
+				rootMargin: '0px 0px -50px 0px'
+			});
+
+			document.querySelectorAll('.animate-on-scroll').forEach(el => {
+				observer.observe(el);
+			});
+
+			// FAQ open/close icon toggle
+			document.querySelectorAll('.faq-item').forEach(item => {
+				item.addEventListener('toggle', () => {
+					const icon = item.querySelector('.faq-icon');
+					if (icon) {
+						icon.textContent = item.open ? '−' : '+';
+					}
+				});
+			});
+		</script>
+	</body>
+</html>
+
+<style>
+	/* ========== HERO ========== */
+	.hero {
+		position: relative;
+		padding: 10rem 0 6rem;
+		background: var(--gradient-hero);
+		overflow: hidden;
+		min-height: 100vh;
+		display: flex;
+		align-items: center;
+	}
+
+	.hero-bg-shapes {
+		position: absolute;
+		inset: 0;
+		pointer-events: none;
+		overflow: hidden;
+	}
+
+	.hero-shape {
+		position: absolute;
+		border-radius: 50%;
+		opacity: 0.07;
+	}
+
+	.hero-shape--1 {
+		width: 600px;
+		height: 600px;
+		background: var(--color-primary);
+		top: -200px;
+		right: -100px;
+	}
+
+	.hero-shape--2 {
+		width: 400px;
+		height: 400px;
+		background: var(--color-accent);
+		bottom: -100px;
+		left: -100px;
+	}
+
+	.hero-shape--3 {
+		width: 200px;
+		height: 200px;
+		background: var(--color-primary-light);
+		top: 50%;
+		left: 30%;
+	}
+
+	.hero-grid {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 4rem;
+		align-items: center;
+	}
+
+	.hero-content {
+		animation: fadeInUp 0.8s ease forwards;
+	}
+
+	.hero-badge {
+		display: inline-flex;
+		align-items: center;
+		gap: 0.5rem;
+		padding: 0.45rem 1.1rem;
+		background: var(--color-primary-lighter);
+		color: var(--color-primary);
+		font-size: 0.8rem;
+		font-weight: 600;
+		border-radius: var(--radius-full);
+		margin-bottom: var(--space-xl);
+		animation: fadeInUp 0.6s ease forwards;
+	}
+
+	.hero-title {
+		font-family: var(--font-primary);
+		font-size: clamp(2.5rem, 5vw, 3.8rem);
+		font-weight: 900;
+		line-height: 1.08;
+		margin-bottom: var(--space-xl);
+		color: var(--color-text);
+	}
+
+	.hero-title--highlight {
+		background: var(--gradient-primary);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		background-clip: text;
+	}
+
+	.hero-subtitle {
+		font-size: 1.1rem;
+		line-height: 1.8;
+		color: var(--color-text-secondary);
+		margin-bottom: var(--space-2xl);
+		max-width: 500px;
+	}
+
+	.hero-stats {
+		display: flex;
+		align-items: center;
+		gap: var(--space-xl);
+		margin-top: var(--space-2xl);
+		padding-top: var(--space-2xl);
+		border-top: 1px solid var(--color-border-light);
+	}
+
+	.hero-stat {
+		display: flex;
+		flex-direction: column;
+		gap: 0.2rem;
+	}
+
+	.hero-stat__number {
+		font-family: var(--font-primary);
+		font-size: 1.5rem;
+		font-weight: 800;
+		color: var(--color-primary);
+	}
+
+	.hero-stat__label {
+		font-size: 0.8rem;
+		color: var(--color-text-muted);
+		font-weight: 500;
+	}
+
+	.hero-stat-divider {
+		width: 1px;
+		height: 36px;
+		background: var(--color-border);
+	}
+
+	/* Hero Visual */
+	.hero-visual {
+		position: relative;
+		display: flex;
+		justify-content: center;
+		animation: fadeInUp 1s ease 0.3s forwards;
+		opacity: 0;
+	}
+
+	.hero-phone {
+		position: relative;
+		z-index: 2;
+	}
+
+	/* Phone Frame */
+	.phone-frame {
+		width: 280px;
+		background: #0F172A;
+		border-radius: 36px;
+		padding: 12px;
+		box-shadow: 0 25px 50px -12px rgba(15,23,42,0.5), inset 0 0 0 1px rgba(255,255,255,0.1);
+		position: relative;
+	}
+
+	.phone-frame--sm {
+		width: 260px;
+	}
+
+	.phone-frame--showcase {
+		width: 240px;
+	}
+
+	.phone-frame--featured {
+		width: 270px;
+		box-shadow: var(--shadow-2xl), var(--shadow-glow);
+	}
+
+	.phone-notch {
+		width: 120px;
+		height: 28px;
+		background: #0F172A;
+		border-radius: 0 0 18px 18px;
+		margin: 0 auto;
+		position: relative;
+		z-index: 10;
+		margin-top: -1px;
+	}
+
+	.phone-screen {
+		background: #FFFFFF;
+		border-radius: 26px;
+		overflow: hidden;
+		aspect-ratio: 9/19.5;
+		position: relative;
+	}
+
+	.mock-screenshot {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		border-radius: 0;
+	}
+
+	/* Mock App UI */
+	.mock-app {
+		padding: 20px 16px;
+		font-family: var(--font-body);
+		height: 100%;
+	}
+
+	.mock-header {
+		margin-bottom: 16px;
+	}
+
+	.mock-greeting {
+		font-size: 12px;
+		color: var(--color-text-muted);
+	}
+
+	.mock-title {
+		font-size: 18px;
+		font-weight: 800;
+		color: var(--color-text);
+		font-family: var(--font-primary);
+		letter-spacing: -0.02em;
+	}
+
+	.mock-progress-card {
+		background: var(--color-primary-lighter);
+		border-radius: 14px;
+		padding: 16px;
+		margin-bottom: 16px;
+		box-shadow: var(--shadow-sm);
+	}
+
+	.mock-progress-label {
+		font-size: 11px;
+		font-weight: 600;
+		color: var(--color-primary);
+		margin-bottom: 8px;
+	}
+
+	.mock-progress-bar {
+		height: 6px;
+		background: rgba(27,94,59,0.15);
+		border-radius: 4px;
+		overflow: hidden;
+	}
+
+	.mock-progress-fill {
+		height: 100%;
+		background: var(--gradient-primary);
+		border-radius: 4px;
+	}
+
+	.mock-progress-text {
+		font-size: 10px;
+		color: var(--color-primary);
+		margin-top: 6px;
+		font-weight: 600;
+	}
+
+	.mock-modules {
+		display: flex;
+		flex-direction: column;
+		gap: 8px;
+	}
+
+	.mock-module {
+		display: flex;
+		align-items: center;
+		gap: 12px;
+		padding: 12px;
+		background: var(--color-white);
+		border-radius: 12px;
+		border: 1px solid var(--color-border-light);
+		box-shadow: var(--shadow-sm);
+		transition: transform 0.2s;
+	}
+
+	.mock-module-icon {
+		width: 36px;
+		height: 36px;
+		border-radius: 10px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		font-size: 16px;
+		flex-shrink: 0;
+	}
+
+	.mock-module-info {
+		flex: 1;
+		min-width: 0;
+	}
+
+	.mock-module-name {
+		font-size: 12px;
+		font-weight: 700;
+		color: var(--color-text);
+	}
+
+	.mock-module-sub {
+		font-size: 10px;
+		color: var(--color-text-muted);
+	}
+
+	.mock-module-badge {
+		font-size: 11px;
+		font-weight: 700;
+		color: var(--color-primary);
+		background: var(--color-primary-lighter);
+		padding: 3px 8px;
+		border-radius: 6px;
+	}
+
+	/* Float Cards */
+	.hero-float-card {
+		position: absolute;
+		display: flex;
+		align-items: center;
+		gap: 1rem;
+		padding: 1rem 1.25rem;
+		background: rgba(255, 255, 255, 0.85);
+		backdrop-filter: blur(12px);
+		-webkit-backdrop-filter: blur(12px);
+		border: 1px solid rgba(255, 255, 255, 0.4);
+		border-radius: var(--radius-lg);
+		box-shadow: var(--shadow-xl);
+		z-index: 5;
+		animation: float 4s ease-in-out infinite;
+	}
+
+	.hero-float-card--1 {
+		top: 15%;
+		right: -10%;
+		animation-delay: 0s;
+	}
+
+	.hero-float-card--2 {
+		bottom: 20%;
+		left: -5%;
+		animation-delay: 2s;
+	}
+
+	.float-card-icon {
+		font-size: 1.5rem;
+	}
+
+	.float-card-title {
+		font-size: 0.75rem;
+		font-weight: 700;
+		color: var(--color-text);
+	}
+
+	.float-card-text {
+		font-size: 0.7rem;
+		color: var(--color-text-muted);
+	}
+
+	/* ========== TRUST ========== */
+	.trust-section {
+		padding: var(--space-4xl) 0;
+	}
+
+	.trust-grid {
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		gap: var(--space-xl);
+	}
+
+	.trust-card {
+		text-align: center;
+		padding: var(--space-2xl) var(--space-lg);
+		background: var(--color-white);
+		border-radius: var(--radius-lg);
+		border: 1px solid var(--color-border-light);
+		transition: all var(--transition-base);
+	}
+
+	.trust-card:hover {
+		transform: translateY(-4px);
+		box-shadow: var(--shadow-lg);
+		border-color: var(--color-primary-lighter);
+	}
+
+	.trust-icon {
+		font-size: 2.5rem;
+		margin-bottom: var(--space-md);
+	}
+
+	.trust-card h3 {
+		font-family: var(--font-primary);
+		font-size: 1.1rem;
+		font-weight: 700;
+		margin-bottom: 0.5rem;
+	}
+
+	.trust-card p {
+		font-size: 0.88rem;
+		color: var(--color-text-secondary);
+		line-height: 1.6;
+	}
+
+	/* ========== FEATURES ========== */
+	/* Feature Spotlight */
+	.feature-spotlight {
+		display: grid;
+		grid-template-columns: 1.2fr 1fr;
+		gap: 4rem;
+		align-items: center;
+		margin-bottom: var(--space-4xl);
+	}
+
+	.feature-spotlight--reverse {
+		grid-template-columns: 1fr 1.2fr;
+	}
+
+	.feature-spotlight--reverse .feature-spotlight__content {
+		order: 2;
+	}
+
+	.feature-spotlight--reverse .feature-spotlight__visual {
+		order: 1;
+	}
+
+	.feature-spotlight__badge {
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		width: 40px;
+		height: 40px;
+		background: var(--gradient-primary);
+		color: var(--color-white);
+		border-radius: var(--radius-sm);
+		font-family: var(--font-primary);
+		font-weight: 800;
+		font-size: 0.85rem;
+		margin-bottom: var(--space-lg);
+	}
+
+	.feature-spotlight__title {
+		font-size: clamp(1.5rem, 3vw, 2rem);
+		font-weight: 800;
+		margin-bottom: var(--space-md);
+	}
+
+	.feature-spotlight__desc {
+		font-size: 1rem;
+		color: var(--color-text-secondary);
+		line-height: 1.7;
+		margin-bottom: var(--space-xl);
+	}
+
+	.feature-spotlight__list {
+		list-style: none;
+		display: flex;
+		flex-direction: column;
+		gap: 0.75rem;
+	}
+
+	.feature-spotlight__list li {
+		display: flex;
+		align-items: center;
+		gap: 0.75rem;
+		font-size: 0.95rem;
+		color: var(--color-text-secondary);
+		font-weight: 500;
+	}
+
+	.feature-spotlight__list li svg {
+		flex-shrink: 0;
+	}
+
+	.feature-spotlight__visual {
+		display: flex;
+		justify-content: center;
+	}
+
+	.feature-phone {
+		filter: drop-shadow(0 20px 40px rgba(27,94,59,0.12));
+	}
+
+	/* Mock Mevzuat UI */
+	.mock-mevzuat {
+		padding: 20px 14px;
+		font-family: var(--font-body);
+	}
+
+	.mock-mevzuat-header {
+		font-size: 16px;
+		font-weight: 800;
+		margin-bottom: 16px;
+		color: var(--color-text);
+	}
+
+	.mock-mevzuat-item {
+		display: flex;
+		align-items: flex-start;
+		gap: 10px;
+		padding: 10px 0;
+		border-bottom: 1px solid var(--color-border-light);
+	}
+
+	.mock-check {
+		width: 22px;
+		height: 22px;
+		border-radius: 6px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		font-size: 12px;
+		font-weight: 700;
+		flex-shrink: 0;
+		margin-top: 2px;
+	}
+
+	.mock-mevzuat-item.done .mock-check {
+		background: var(--color-primary);
+		color: white;
+	}
+
+	.mock-mevzuat-item.active .mock-check {
+		background: var(--color-accent);
+		color: white;
+		font-size: 10px;
+	}
+
+	.mock-check.empty {
+		background: var(--color-border-light);
+		border: 1.5px solid var(--color-border);
+	}
+
+	.mock-mevzuat-title {
+		font-size: 11px;
+		font-weight: 600;
+		color: var(--color-text);
+		line-height: 1.3;
+	}
+
+	.mock-mevzuat-sub {
+		font-size: 9px;
+		color: var(--color-text-muted);
+		margin-top: 2px;
+	}
+
+	/* Mock Stats */
+	.mock-stats {
+		padding: 16px 14px;
+		font-family: var(--font-body);
+	}
+
+	.mock-stats-header {
+		font-size: 16px;
+		font-weight: 800;
+		margin-bottom: 12px;
+		color: var(--color-text);
+	}
+
+	.mock-stats-ring {
+		display: flex;
+		justify-content: center;
+		margin-bottom: 16px;
+	}
+
+	.mock-stats-bars {
+		display: flex;
+		flex-direction: column;
+		gap: 10px;
+	}
+
+	.mock-stats-bar-item {
+		display: flex;
+		align-items: center;
+		gap: 8px;
+		font-size: 10px;
+	}
+
+	.mock-stats-bar-label {
+		width: 70px;
+		font-weight: 600;
+		color: var(--color-text-secondary);
+		font-size: 10px;
+	}
+
+	.mock-stats-bar {
+		flex: 1;
+		height: 6px;
+		background: var(--color-border-light);
+		border-radius: 4px;
+		overflow: hidden;
+	}
+
+	.mock-stats-bar-fill {
+		height: 100%;
+		border-radius: 4px;
+	}
+
+	.mock-stats-bar-item span {
+		font-weight: 700;
+		color: var(--color-text);
+		font-size: 10px;
+		width: 30px;
+		text-align: right;
+	}
+
+	/* Feature Cards Grid */
+	.features-grid {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		gap: var(--space-xl);
+	}
+
+	.feature-card {
+		background: var(--color-white);
+		border-radius: var(--radius-lg);
+		padding: var(--space-2xl);
+		border: 1px solid var(--color-border-light);
+		transition: all var(--transition-base);
+	}
+
+	.feature-card:hover {
+		transform: translateY(-4px);
+		box-shadow: var(--shadow-card-hover);
+		border-color: transparent;
+	}
+
+	.feature-card__icon {
+		width: 52px;
+		height: 52px;
+		border-radius: var(--radius-md);
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin-bottom: var(--space-lg);
+	}
+
+	.feature-card__title {
+		font-family: var(--font-primary);
+		font-size: 1.1rem;
+		font-weight: 700;
+		margin-bottom: 0.5rem;
+	}
+
+	.feature-card__desc {
+		font-size: 0.9rem;
+		color: var(--color-text-secondary);
+		line-height: 1.65;
+		margin-bottom: var(--space-md);
+	}
+
+	.feature-card__tags {
+		list-style: none;
+		display: flex;
+		gap: 0.5rem;
+		flex-wrap: wrap;
+	}
+
+	.feature-card__tags li {
+		padding: 0.25rem 0.7rem;
+		font-size: 0.72rem;
+		font-weight: 600;
+		background: var(--color-primary-50);
+		color: var(--color-primary);
+		border-radius: var(--radius-full);
+	}
+
+	/* ========== SCREENSHOTS ========== */
+	.screenshots-showcase {
+		display: flex;
+		align-items: flex-end;
+		justify-content: center;
+		gap: var(--space-2xl);
+		padding: var(--space-2xl) 0;
+	}
+
+	.screenshot-item {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: var(--space-md);
+	}
+
+	.screenshot-item:nth-child(1),
+	.screenshot-item:nth-child(3) {
+		transform: scale(0.9);
+		opacity: 0.85;
+	}
+
+	.screenshot-label {
+		font-size: 0.85rem;
+		font-weight: 600;
+		color: var(--color-text-secondary);
+	}
+
+	/* ========== WORKFLOW ========== */
+	.workflow-steps {
+		display: flex;
+		justify-content: center;
+		gap: 0;
+		position: relative;
+	}
+
+	.workflow-step {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+		flex: 1;
+		position: relative;
+		max-width: 220px;
+	}
+
+	.workflow-step__number {
+		width: 44px;
+		height: 44px;
+		border-radius: 50%;
+		background: var(--gradient-primary);
+		color: white;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		font-family: var(--font-primary);
+		font-weight: 800;
+		font-size: 1rem;
+		margin-bottom: var(--space-lg);
+		position: relative;
+		z-index: 2;
+	}
+
+	.workflow-step__connector {
+		position: absolute;
+		top: 22px;
+		left: calc(50% + 22px);
+		width: calc(100% - 44px);
+		height: 2px;
+		background: var(--color-primary-lighter);
+		z-index: 1;
+	}
+
+	.workflow-step:last-child .workflow-step__connector {
+		display: none;
+	}
+
+	.workflow-step__content {
+		padding: var(--space-lg);
+		background: var(--color-white);
+		border-radius: var(--radius-lg);
+		border: 1px solid var(--color-border-light);
+		width: 100%;
+		transition: all var(--transition-base);
+	}
+
+	.workflow-step__content:hover {
+		transform: translateY(-4px);
+		box-shadow: var(--shadow-md);
+	}
+
+	.workflow-step__icon {
+		font-size: 2rem;
+		margin-bottom: 0.5rem;
+	}
+
+	.workflow-step__content h4 {
+		font-family: var(--font-primary);
+		font-size: 1rem;
+		font-weight: 700;
+		margin-bottom: 0.35rem;
+	}
+
+	.workflow-step__content p {
+		font-size: 0.82rem;
+		color: var(--color-text-secondary);
+		line-height: 1.5;
+	}
+
+	/* ========== WHY ========== */
+	.why-grid {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		gap: var(--space-xl);
+	}
+
+	.why-card {
+		padding: var(--space-2xl);
+		background: var(--color-bg-alt);
+		border-radius: var(--radius-lg);
+		border: 1px solid var(--color-border-light);
+		transition: all var(--transition-base);
+	}
+
+	.why-card:hover {
+		transform: translateY(-4px);
+		box-shadow: var(--shadow-lg);
+		background: var(--color-white);
+	}
+
+	.why-card__icon {
+		font-size: 2rem;
+		margin-bottom: var(--space-md);
+	}
+
+	.why-card h4 {
+		font-family: var(--font-primary);
+		font-size: 1.05rem;
+		font-weight: 700;
+		margin-bottom: 0.5rem;
+	}
+
+	.why-card p {
+		font-size: 0.9rem;
+		color: var(--color-text-secondary);
+		line-height: 1.65;
+	}
+
+	/* ========== FAQ ========== */
+	.faq-list {
+		display: flex;
+		flex-direction: column;
+		gap: var(--space-md);
+	}
+
+	.faq-item {
+		background: var(--color-white);
+		border-radius: var(--radius-md);
+		border: 1px solid var(--color-border-light);
+		overflow: hidden;
+		transition: all var(--transition-base);
+	}
+
+	.faq-item[open] {
+		box-shadow: var(--shadow-md);
+		border-color: var(--color-primary-lighter);
+	}
+
+	.faq-question {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		padding: var(--space-lg) var(--space-xl);
+		cursor: pointer;
+		font-family: var(--font-primary);
+		font-size: 1rem;
+		font-weight: 600;
+		color: var(--color-text);
+		list-style: none;
+		transition: color var(--transition-fast);
+	}
+
+	.faq-question::-webkit-details-marker {
+		display: none;
+	}
+
+	.faq-question:hover {
+		color: var(--color-primary);
+	}
+
+	.faq-icon {
+		font-size: 1.4rem;
+		font-weight: 300;
+		color: var(--color-text-muted);
+		transition: transform var(--transition-base);
+		flex-shrink: 0;
+		margin-left: 1rem;
+	}
+
+	.faq-answer {
+		padding: 0 var(--space-xl) var(--space-lg);
+	}
+
+	.faq-answer p {
+		font-size: 0.95rem;
+		color: var(--color-text-secondary);
+		line-height: 1.7;
+	}
+
+	/* ========== CTA ========== */
+	.cta-section {
+		padding: var(--space-5xl) 0;
+	}
+
+	.cta-wrapper {
+		position: relative;
+		background: var(--gradient-cta);
+		border-radius: var(--radius-2xl);
+		padding: var(--space-5xl) var(--space-3xl);
+		text-align: center;
+		overflow: hidden;
+	}
+
+	.cta-bg-shapes {
+		position: absolute;
+		inset: 0;
+		pointer-events: none;
+	}
+
+	.cta-shape {
+		position: absolute;
+		border-radius: 50%;
+	}
+
+	.cta-shape--1 {
+		width: 300px;
+		height: 300px;
+		background: rgba(255,255,255,0.05);
+		top: -80px;
+		right: -60px;
+	}
+
+	.cta-shape--2 {
+		width: 200px;
+		height: 200px;
+		background: rgba(255,255,255,0.05);
+		bottom: -60px;
+		left: -40px;
+	}
+
+	.cta-content {
+		position: relative;
+		z-index: 2;
+	}
+
+	.cta-title {
+		font-family: var(--font-primary);
+		font-size: clamp(2rem, 4vw, 2.8rem);
+		font-weight: 900;
+		color: white;
+		margin-bottom: var(--space-lg);
+		line-height: 1.15;
+	}
+
+	.cta-desc {
+		font-size: 1.1rem;
+		color: rgba(255,255,255,0.8);
+		margin-bottom: var(--space-2xl);
+		max-width: 500px;
+		margin-left: auto;
+		margin-right: auto;
+		line-height: 1.7;
+	}
+
+	:global(.store-btn--light) {
+		background: rgba(255,255,255,0.15) !important;
+		border: 1px solid rgba(255,255,255,0.25) !important;
+		backdrop-filter: blur(10px) !important;
+	}
+
+	:global(.store-btn--light:hover) {
+		background: rgba(255,255,255,0.25) !important;
+		transform: translateY(-3px) !important;
+		box-shadow: 0 8px 32px rgba(0,0,0,0.2) !important;
+	}
+
+	/* ========== RESPONSIVE ========== */
+	@media (max-width: 1024px) {
+		.hero-grid {
+			grid-template-columns: 1fr;
+			gap: 3rem;
+			text-align: center;
+		}
+
+		.hero-subtitle {
+			margin-left: auto;
+			margin-right: auto;
+		}
+
+		.hero-stats {
+			justify-content: center;
+		}
+
+		.hero-visual {
+			opacity: 1;
+		}
+
+		.hero-float-card--1 {
+			right: 5%;
+		}
+
+		.hero-float-card--2 {
+			left: 5%;
+		}
+
+		.feature-spotlight,
+		.feature-spotlight--reverse {
+			grid-template-columns: 1fr;
+			gap: 2rem;
+		}
+
+		.feature-spotlight--reverse .feature-spotlight__content {
+			order: 1;
+		}
+
+		.feature-spotlight--reverse .feature-spotlight__visual {
+			order: 2;
+		}
+
+		.features-grid {
+			grid-template-columns: repeat(2, 1fr);
+		}
+
+		.workflow-steps {
+			flex-wrap: wrap;
+			gap: var(--space-lg);
+		}
+
+		.workflow-step__connector {
+			display: none;
+		}
+
+		.screenshots-showcase {
+			flex-direction: column;
+			align-items: center;
+		}
+
+		.screenshot-item:nth-child(1),
+		.screenshot-item:nth-child(3) {
+			transform: scale(1);
+			opacity: 1;
+		}
+	}
+
+	@media (max-width: 768px) {
+		.hero {
+			padding: 7rem 0 3rem;
+			min-height: auto;
+		}
+
+		.trust-grid {
+			grid-template-columns: repeat(2, 1fr);
+			gap: var(--space-md);
+		}
+
+		.features-grid {
+			grid-template-columns: 1fr;
+		}
+
+		.workflow-steps {
+			flex-direction: column;
+			align-items: center;
+		}
+
+		.workflow-step {
+			max-width: 100%;
+		}
+
+		.why-grid {
+			grid-template-columns: 1fr;
+		}
+
+		.hero-float-card {
+			display: none;
+		}
+
+		.cta-wrapper {
+			padding: var(--space-3xl) var(--space-xl);
+		}
+
+		.store-buttons {
+			justify-content: center;
+		}
+	}
+
+	@media (max-width: 480px) {
+		.trust-grid {
+			grid-template-columns: 1fr;
+		}
+
+		.hero-stats {
+			flex-direction: column;
+			gap: var(--space-md);
+		}
+
+		.hero-stat-divider {
+			display: none;
+		}
+	}
+</style>
